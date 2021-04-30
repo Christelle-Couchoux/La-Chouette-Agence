@@ -5,6 +5,10 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    width: auto;
+    min-width: 375px;
+    max-width: 1920px;
+    margin: auto;
 }
 
 a,
@@ -90,10 +94,6 @@ a:hover {
     right: 0;
 }
 
-.texture-paper::before {
-    background: url("img/texture-paper.png");
-    background-size: 280px 280px;
-}
 
 .b-parallax {
     background-attachment: fixed;
@@ -362,46 +362,7 @@ a:hover {
     z-index: 2;
 }
 
-@media (min-width: 768px) {
-    .site-navigation {
-        position: absolute;
-        top: 50%;
-        right: 20px;
-        transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
-    }
-    .nav > li .dropdown-menu a,
-    .nav > li .dropdown-menu a:hover {
-        color: #484848;
-    }
-    .nav-invert .site-navigation {
-        left: 0;
-        right: 0;
-    }
-    .nav-center {
-        text-align: center;
-    }
-    .nav-center .navbar-header {
-        width: 100%;
-    }
-    .nav-center .navbar-header,
-    .nav-center .navbar-brand,
-    .nav-center .nav > li {
-        float: none;
-        display: inline-block;
-    }
-    .nav-center .site-navigation {
-        position: relative;
-        width: 100%;
-        right: 0;
-        margin-right: 0px;
-        margin-top: 20px;
-    }
-    .nav-center.mini-nav .navbar-toggle {
-        float: none;
-        margin: 10px auto 0;
-    }
-}
+
 
 .nav > li > .dropdown a {
     background: none!important;
@@ -686,7 +647,7 @@ p {
 }
 
 .h1 {
-    font-size: 20px;
+    font-size: 30px;
     font-family: "Open Sans";
 }
 
@@ -705,12 +666,14 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 2.2rem;
+    /* font size changed to rem unit */
     line-height: 1.4em;
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 1.5rem;
+    /* font size changed to rem unit */
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -753,7 +716,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: #575757;
     padding: 40px 40px 40px 40px;
 }
 
@@ -778,6 +741,91 @@ h4 {
     color: #F3976C!important;
 }
 
+
+/* added code */
+.tc-grey{
+    color: #333333!important;
+}
+
+.tc-grey:hover{
+    color: #5c5c5c!important;
+}
+
+.tc-grey-no-hover{
+    color: #333333!important;
+}
+
+.tc-medium-grey{
+    color: #575757!important;
+}
+
+.bcg-grey{
+    background-color: #333333;
+}
+
+.bcg-grey:hover{
+    background-color: #5c5c5c!important;
+}
+
+.hover:hover {
+    text-decoration: underline!important;
+}
+
+.padding-10-0{
+    padding: 10px 0;
+}
+
+.padding-40{
+    padding: 40px;
+}
+
+.width-75pct{
+    width: 75%;
+    margin: auto;
+}
+
+.font-size-14{
+    font-size: 1.4rem;
+}
+
+.font-size-15{
+    font-size: 1.5rem;
+}
+
+.font-size-16{
+    font-size: 1.6rem;
+}
+
+.font-size-18{
+    font-size: 1.8rem;
+}
+
+.font-size-23{
+    font-size: 2.3rem;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.normal{
+    font-style: normal;
+}
+
+.line-height-2{
+    line-height: 3rem;
+}
+
+
+
+img{
+    margin: auto;
+}
+
+/**/
+
+
+
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF!important;
@@ -793,7 +841,8 @@ h4 {
 }
 
 .ltc-white:hover {
-    color: #cccccc!important;
+    color: #F3976C!important;
+    /* hover color changed so higher contrast */
 }
 
 .ltc-atomic-tangerine {
@@ -809,83 +858,29 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
-    background-image: url("img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
-}
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banner.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/presentation-image.jpeg");
 }
 
-@media (max-width: 1024px) {
+
+@media (max-width: 400px) {
     .bloc {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    .bloc.full-width-bloc,
-    .bloc-tile-2.full-width-bloc .container,
-    .bloc-tile-3.full-width-bloc .container,
-    .bloc-tile-4.full-width-bloc .container {
         padding-left: 0;
         padding-right: 0;
     }
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
-    .navbar .nav {
-        max-width: 80%
+@media (max-width: 767px) {
+    .bloc-mob-center-text {
+        text-align: center;
     }
-    .nav-center.navbar .nav {
-        max-width: 100%
-    }
-}
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media (max-width: 991px) {
-    .container {
-        width: 100%;
-    }
-    .b-parallax {
-        background-attachment: scroll;
-    }
-    .page-container,
-    #hero-bloc {
-        overflow-x: hidden;
-        position: relative;
-    }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
-    .bloc-group,
-    .bloc-group .bloc {
-        display: block;
-        width: 100%;
-    }
-    .bloc-fill-screen .fill-bloc-top-edge,
-    .bloc-fill-screen .fill-bloc-bottom-edge {
-        padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+    .img-size img{
+        max-width: 320px;
     }
 }
 
@@ -1028,15 +1023,107 @@ h4 {
     }
 }
 
-@media (max-width: 400px) {
+@media (min-width: 768px) {
+    .site-navigation {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translate(0, -50%);
+        -webkit-transform: translateY(-50%);
+    }
+    .nav > li .dropdown-menu a,
+    .nav > li .dropdown-menu a:hover {
+        color: #484848;
+    }
+    .nav-invert .site-navigation {
+        left: 0;
+        right: 0;
+    }
+    .nav-center {
+        text-align: center;
+    }
+    .nav-center .navbar-header {
+        width: 100%;
+    }
+    .nav-center .navbar-header,
+    .nav-center .navbar-brand,
+    .nav-center .nav > li {
+        float: none;
+        display: inline-block;
+    }
+    .nav-center .site-navigation {
+        position: relative;
+        width: 100%;
+        right: 0;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    .nav-center.mini-nav .navbar-toggle {
+        float: none;
+        margin: 10px auto 0;
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .navbar .nav {
+        max-width: 80%
+    }
+    .nav-center.navbar .nav {
+        max-width: 100%
+    }
+}
+
+@media (max-width: 991px) {
+    .container {
+        width: 100%;
+    }
+    .b-parallax {
+        background-attachment: scroll;
+    }
+    .page-container,
+    #hero-bloc {
+        overflow-x: hidden;
+        position: relative;
+    }
     .bloc {
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
+    }
+    .bloc-group,
+    .bloc-group .bloc {
+        display: block;
+        width: 100%;
+    }
+    .bloc-fill-screen .fill-bloc-top-edge,
+    .bloc-fill-screen .fill-bloc-bottom-edge {
+        padding: 0 20px;
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
+    }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .b-parallax {
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 1024px) {
+    .bloc {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .bloc.full-width-bloc,
+    .bloc-tile-2.full-width-bloc .container,
+    .bloc-tile-3.full-width-bloc .container,
+    .bloc-tile-4.full-width-bloc .container {
         padding-left: 0;
         padding-right: 0;
     }
 }
 
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .b-parallax {
+        background-attachment: scroll;
     }
 }
