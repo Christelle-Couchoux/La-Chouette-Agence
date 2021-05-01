@@ -20,11 +20,11 @@
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
     
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
+	<script src="./js/jquery-2.1.0.js" defer></script>
+	<script src="./js/bootstrap.js" defer></script>
+	<script src="./js/blocs.js" defer></script>
 	<script src="./js/jquery.touchSwipe.js" defer></script>
-	<script src="./js/gmaps.js"></script>
+	<script src="./js/gmaps.js" defer></script>
 
     <title>Accueil - La Chouette Agence, Entreprise de webdesign à Lyon</title>
   
@@ -43,7 +43,7 @@
 				<nav class="navbar row">
 					<div class="navbar-header">
 						<a class="navbar-brand" href="index.html">
-							<img src="img/la-chouette-agence.png" alt="Logo de La Chouette Agence, entreprise de webdesign à Lyon" height="40" />
+							<img src="img/la-chouette-agence.png" alt="Logo de La Chouette Agence, entreprise de webdesign à Lyon" height="40"/>
 						</a>
 						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 							<span class="sr-only">Toggle navigation</span>
@@ -55,16 +55,16 @@
 					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 						<ul class="site-navigation nav navbar-nav">
 							<li>
-								<a href="index.html" title="Accueil - La Chouette Agence" class="hover">Accueil</a>
+								<a href="index.html" title="Accueil - La Chouette Agence" class="hover-red">Accueil</a>
 							</li>
 							<li>
-								<a href="#services" title="Nos services" class="hover">Nos services</a>
+								<a href="#services" title="Nos services" class="hover-red">Nos services</a>
 							</li>
 							<li>
-								<a href="#creations" title="Nos réalisations" class="hover">Nos réalisations</a>
+								<a href="#creations" title="Nos réalisations" class="hover-red">Nos réalisations</a>
 							</li>
 							<li>
-								<a href="contact.html" title="Formulaire de contact" class="hover">Nous contacter</a>
+								<a href="contact.html" title="Formulaire de contact" class="hover-red">Nous contacter</a>
 							</li>
 						</ul>
 					</div>
@@ -78,14 +78,14 @@
 			<section class="bloc bg-banniere d-bloc bg-t-edge bloc-bg-texture b-parallax" id="bloc-1-hero">
 				<div class="container bloc-lg">
 					<div class="row tight-width-whitespace">
-						<div class="col-sm-12 bgc-atomic-tangerine padding-10-0">
+						<div class="col-sm-12 bgc-white-transparent padding-10">
 							<img src="img/logo.png" class="center-block image-resize-mode" width="100" alt="Logo de La Chouette Agence, entreprise de webdesign à Lyon"/>
-							<h1 class="text-center hero-bloc-text tc-grey-no-hover">
-								La Chouette Agence<br/>
+							<h1 class="text-center hero-bloc-text tc-grey">
+								<span class="tc-red">La Chouette Agence</span><br/>
 								<span class="font-size-23">Entreprise de webdesign basée à Lyon</span>
 							</h1>
 							<div class="text-center">
-								<a href="contact.html" class="btn btn-lg btn-clean btn-rd cta-hero bcg-grey tc-white" id="cta-hero">
+								<a href="contact.html" title="Formulaire de contact" class="btn btn-lg btn-clean btn-rd cta-hero bgc-grey white" id="cta-hero">
 									Contact
 								</a>
 							</div>
@@ -98,10 +98,11 @@
 			<!-- bloc-2-services -->
 			<section class="bloc bgc-white l-bloc" id="bloc-2-services">
 				<div class="container bloc-md">
-					<div class="row">
+					<div class="row  width-85pct">
 						<div class="col-sm-12 text-center">
-							<h2 id="services">La Chouette Agence est une agence de webdesign qui aide<br/>
-								les entreprises à devenir attractives et visibles sur Internet.</h2>
+							<h2 id="services"><span class="font-size-28 tc-red">Nos services</span><br/><br/>
+								La Chouette Agence est une agence de webdesign située à Lyon 
+								qui aide les entreprises à devenir attractives et visibles sur Internet.</h2>
 						</div>
 					</div>
 					<div class="row voffset-lg med-width-whitespace">
@@ -112,9 +113,9 @@
 							<h3 class="mg-md text-center">
 								Web design
 							</h3>
-							<p class="text-center font-size-14">
+							<p class="text-center font-size-15">
 								Que vous ayez un site web qui a besoin d&rsquo;un rafraîchissement ou que vous partiez de zéro,
-								laissez-nous vous réaliser un design dont vous serez fier.
+								laissez-nous vous réaliser un <strong>design</strong> dont vous serez fiers.
 							</p>
 						</div>
 						<div class="col-sm-4">
@@ -124,9 +125,9 @@
 							<h3 class="mg-md text-center">
 								Stratégie
 							</h3>
-							<p class="text-center font-size-14">
-								Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous 
-								pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.
+							<p class="text-center font-size-15">
+								Plutôt que de suggérer des <strong>designs</strong> à la mode, nous travaillerons avec vous 
+								pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur <strong>web design</strong> possible.
 							</p>
 						</div>
 						<div class="col-sm-4">
@@ -136,8 +137,8 @@
 							<h3 class="mg-md text-center">
 								Illustrations
 							</h3>
-							<p class="text-center font-size-14">
-								Un bon design n'est rien sans de bonnes illustrations. 
+							<p class="text-center font-size-15">
+								Un bon <strong>web design</strong> n'est rien sans de bonnes <strong>illustrations</strong>. 
 								Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.
 							</p>
 						</div>
@@ -164,17 +165,18 @@
 				<div class="container bloc-lg">
 					<div class="row tight-width-whitespace black-background">
 						<div class="col-sm-12">
-							<h2 class="mg-md text-center tc-white">
-								Notre agence de webdesign travaille pour aider les entreprises de la région Lyonnaise à se développer, 
+							<h2 class="mg-md text-center white">
+								<span class="font-size-28">Notre objectif</span><br/><br/>
+								Notre agence de webdesign travaille pour aider les entreprises de la région lyonnaise à se développer, 
 								attirer de nouveaux clients et connaître le succès.
 							</h2>
-							<p class="text-center white font-size-15">
+							<p class="text-center white font-size-16">
 								Nous aimons collaborer avec des entrepreneurs créatifs et des entreprises locales, 
 								qu’elles aient besoin de créer un site de A à Z ou de donner un coup de jeune à leur site. 
 								Que vous ayez besoin d’une identité visuelle complète ou d’une refonte de votre site, 
 								n’hésitez pas à nous contacter. 
 								Nous travaillerons ensemble pour créer des sites beaux et bien structurés, 
-								qui seront facilement trouvables sur les moteurs de recherche.<br/><br/>
+								qui seront facilement trouvables sur les moteurs de recherche.<br/><br/><br/>
 								<a class="ltc-white bold-link" href="contact.html">Contactez notre équipe</a>
 							</p>
 						</div>
@@ -186,9 +188,10 @@
 			<!-- bloc-4-portfolio -->
 			<section class="bloc bgc-white bg-repeat l-bloc" id="bloc-4-portfolio">
 				<div class="container bloc-lg">
-					<div class="row">
+					<div class="row width-85pct">
 						<div class="col-sm-12 text-center">
-							<h2 id="creations">Nous travaillons avec beaucoup de clients,<br/>
+							<h2 id="creations"><span class="font-size-28 tc-red">Nos réalisations</span><br/><br/>
+								Nous travaillons avec beaucoup de clients, 
 								voici nos réalisations.</h2>
 						</div>
 					</div>
@@ -200,7 +203,7 @@
 							<h3 class="mg-md text-center">
 								Refonte d'un site web pour un journal local
 							</h3>
-							<p class="text-center font-size-14">
+							<p class="text-center font-size-16">
 								Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.
 							</p>
 						</div>
@@ -211,7 +214,7 @@
 							<h3 class="mg-md text-center">
 								Création d'un site web pour photographes
 							</h3>
-							<p class="text-center font-size-14">
+							<p class="text-center font-size-16">
 								Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.
 							</p>
 						</div>
@@ -224,7 +227,7 @@
 							<h3 class="mg-md text-center">
 								Création d'un site internet pour un voyageur
 							</h3>
-							<p class="text-center font-size-14">
+							<p class="text-center font-size-16">
 								Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.
 							</p>
 						</div>
@@ -235,7 +238,7 @@
 							<h3 class="mg-md text-center">
 								Conception d'un site pour une agence de mariage
 							</h3>
-							<p class="text-center font-size-14">
+							<p class="text-center font-size-16">
 								Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations.
 							</p>
 						</div>
@@ -247,13 +250,13 @@
 			<!-- bloc-5-cta -->
 			<section class="bloc  bg-banniere d-bloc bloc-bg-texture" id="bloc-5-cta">
 				<div class="container bloc-lg">
-					<div class="row bgc-atomic-tangerine width-75pct padding-10-0">
-						<h2 class="mg-md text-center tc-grey">
+					<div class="row bgc-white-transparent padding-10">
+						<h2 class="mg-md text-center tc-grey font-size-28">
 							Prêts pour redonner vie à votre projet&nbsp;?<br/>
 							Contactez notre équipe de web designers&nbsp;!
 						</h2>
 						<div class="col-sm-12 text-center">
-							<a href="contact.html" class="btn bcg-grey tc-white btn-clean btn-rd btn-lg cta-hero">Contact</a>
+							<a href="contact.html" title="Formulaire de contact" class="btn bgc-grey white btn-clean btn-rd btn-lg cta-hero">Contact</a>
 						</div>
 					</div>
 				</div>
@@ -261,40 +264,40 @@
 			<!-- bloc-5-cta END -->
 
 			<!-- ScrollToTop Button -->
-			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+			<a class="bloc-button btn btn-d scrollToTop bgc-scroll white" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
 			<!-- ScrollToTop Button END-->
 
 		</main>
 
 		<!-- Footer - bloc-8 -->
 		<footer>
-			<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8-footer">
+			<div class="bloc bgc-white d-bloc" id="bloc-8-footer">
 				<div class="container bloc-sm">
 					<div class="row">
 						<div class="col-sm-12">
-							<p class="text-center tc-grey-no-hover font-size-18 padding-10-0">
+							<p class="text-center tc-grey font-size-18 padding-10-0">
 								La Chouette Agence - Entreprise de webdesign basée à Lyon.<br>
 							</p>
 							<div class="row row-no-gutters social">
 							<!-- insert links to social media accounts -->
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="#" title="Twitter"><span class="fa fa-twitter icon-md tc-grey" aria-label="icône Twitter" role="img"></span></a>
+										<a class="social" href="#" title="Twitter"><span class="fa fa-twitter icon-md tc-grey hover-icon" aria-label="icône Twitter" role="img"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="#" title="Facebook"><span class="fa fa-facebook icon-md tc-grey" aria-label="icône Facebook" role="img"></span></a>
+										<a class="social" href="#" title="Facebook"><span class="fa fa-facebook icon-md tc-grey hover-icon" aria-label="icône Facebook" role="img"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="#" title="Dribble"><span class="fa fa-dribbble icon-md tc-grey" aria-label="icône Dribble" role="img"></span></a>
+										<a class="social" href="#" title="Dribble"><span class="fa fa-dribbble icon-md tc-grey hover-icon" aria-label="icône Dribble" role="img"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="#" title="Instagram"><span class="fa fa-instagram icon-md tc-grey" aria-label="icône Instagram" role="img"></span></a>
+										<a class="social" href="#" title="Instagram"><span class="fa fa-instagram icon-md tc-grey hover-icon" aria-label="icône Instagram" role="img"></span></a>
 									</div>
 								</div>
 							</div>

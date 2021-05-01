@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 	<meta name="robots" content="index, follow">
     <meta name="description" content="Notre entreprise de webdesign, La Chouette Agence, 
-	est là pour tous vous aider dans la création ou la refonte de votre site web.
+	est là pour vous aider dans la création ou la refonte de votre site web.
 	Contactez notre équipe de graphistes basés à Lyon en remplissant ce formulaire.">
     
 	<link rel="shortcut icon" type="image/png" href="favicon.jpg">
@@ -16,11 +16,11 @@
 	<link rel="stylesheet" type="text/css" href="./css/font-awesome.css">
 	<link rel="stylesheet" type="text/css" href="./css/et-line.css">
     
-	<script src="./js/jquery-2.1.0.js"></script>
-	<script src="./js/bootstrap.js"></script>
-	<script src="./js/blocs.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
+	<script src="./js/jquery-2.1.0.js" defer></script>
+	<script src="./js/bootstrap.js" defer></script>
+	<script src="./js/blocs.js" defer></script>
+	<script src="./js/jqBootstrapValidation.js" defer></script>
+	<script src="./js/formHandler.js" defer></script>
 
     <title>Contact - La Chouette Agence, Entreprise de webdesign à Lyon</title>
 
@@ -40,7 +40,7 @@
 				<nav class="navbar row">
 					<div class="navbar-header">
 						<a class="navbar-brand" href="index.html">
-							<img src="img/la-chouette-agence.png" alt="Logo de La Chouette Agence, entreprise de webdesign à Lyon" height="40" />
+							<img src="img/la-chouette-agence.png" alt="Logo de La Chouette Agence, entreprise de webdesign à Lyon" height="40"/>
 						</a>
 						<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
 							<span class="sr-only">Toggle navigation</span>
@@ -52,7 +52,7 @@
 					<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 						<ul class="site-navigation nav navbar-nav">
 							<li>
-								<a href="index.html" title="Accueil - La Chouette Agence" class="hover">Accueil</a>
+								<a href="index.html" title="Accueil - La Chouette Agence" class="hover-red">Accueil</a>
 							</li>
 						</ul>
 					</div>
@@ -63,14 +63,15 @@
 
 		<main>
 			<!-- bloc-6 -->
-			<section class="bloc bg-repeat bgc-atomic-tangerine d-bloc " id="bloc-6-lets-talk">
+			<section class="bloc bg-repeat bgc-red  d-bloc " id="bloc-6-lets-talk">
 				<div class="container bloc-lg">
 					<div class="row">
 						<div class="col-sm-12">
-							<h1 class="text-center hero-bloc-text tc-grey-no-hover">
-								Parlons web design&nbsp;!
+							<h1 class="text-center hero-bloc-text white">
+								Besoin d'une entreprise de webdesign à Lyon&nbsp;?<br/>
+								Contactez-nous&nbsp;!
 							</h1>
-							<p class="text-center mg-lg tc-grey-no-hover tight-width-whitespace font-size-18">
+							<p class="text-center mg-lg tight-width-whitespace white font-size-18">
 								Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 								Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 							</p>
@@ -109,14 +110,14 @@
 										Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
 									</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 								</div> 
-								<button class="bloc-button btn btn-lg btn-block cta-hero bgc-atomic-tangerine tc-grey" type="submit">
+								<button class="bloc-button btn btn-lg btn-block cta-hero bgc-medium-grey white" type="submit">
 									Envoyer
 								</button>
 							</form>
 						</div>
 						<div class="col-sm-6">
 							<p class=" font-size-18 padding-40 line-height-2">
-								contact@lachouetteagence.com<br/><br/>
+								<a href="mailto:contact@lachouetteagence.com" class="hover-mailto">contact@lachouetteagence.com</a> <br/><br/>
 								2 place Sathonay<br/>
 								69001 Lyon<br/><br/>
 								Ouvert de 9h à 18h<br/> 
@@ -129,40 +130,40 @@
 			<!-- bloc-7 END -->
 
 			<!-- ScrollToTop Button -->
-			<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+			<a class="bloc-button btn btn-d scrollToTop bgc-scroll white" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
 			<!-- ScrollToTop Button END-->
 
 		</main>
 
 		<!-- Footer - bloc-8 -->
 		<footer>
-			<div class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8-footer">
+			<div class="bloc bgc-white d-bloc" id="bloc-8-footer">
 				<div class="container bloc-sm">
 					<div class="row">
 						<div class="col-sm-12">
-							<p class="text-center tc-grey-no-hover font-size-18 padding-10-0">
+							<p class="text-center tc-grey font-size-18 padding-10-0">
 								La Chouette Agence - Entreprise de webdesign basée à Lyon.<br>
 							</p>
 							<div class="row row-no-gutters social">
 							<!-- insert links to social media accounts -->
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="#" title="Twitter"><span class="fa fa-twitter icon-md tc-grey" aria-label="icône Twitter" role="img"></span></a>
+										<a class="social" href="#" title="Twitter"><span class="fa fa-twitter icon-md tc-grey hover-icon" aria-label="icône Twitter" role="img"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="#" title="Facebook"><span class="fa fa-facebook icon-md tc-grey" aria-label="icône Facebook" role="img"></span></a>
+										<a class="social" href="#" title="Facebook"><span class="fa fa-facebook icon-md tc-grey hover-icon" aria-label="icône Facebook" role="img"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="#" title="Dribble"><span class="fa fa-dribbble icon-md tc-grey" aria-label="icône Dribble" role="img"></span></a>
+										<a class="social" href="#" title="Dribble"><span class="fa fa-dribbble icon-md tc-grey hover-icon" aria-label="icône Dribble" role="img"></span></a>
 									</div>
 								</div>
 								<div class="col-sm-3">
 									<div class="text-center">
-										<a class="social" href="#" title="Instagram"><span class="fa fa-instagram icon-md tc-grey" aria-label="icône Instagram" role="img"></span></a>
+										<a class="social" href="#" title="Instagram"><span class="fa fa-instagram icon-md tc-grey hover-icon" aria-label="icône Instagram" role="img"></span></a>
 									</div>
 								</div>
 							</div>
